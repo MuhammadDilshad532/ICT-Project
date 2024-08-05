@@ -1,0 +1,92 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-image: url(img/photo-1551308352-b697c5327d9d.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background: transparent;
+}
+.logo {
+  border-radius: 120px;
+  width: 70px;
+}
+.navebar a {
+  position: relative;
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 40px;
+}
+.navebar a::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  height: 4px;
+  background: #e60707;
+  border-radius: 30px;
+  transition: 0.3s;
+  width: 0px;
+}
+.navebar a:hover::before {
+  width: 100%;
+}
+.navebar a:hover {
+  color: #e60707;
+}
+/* hesder end */
+div {
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+  margin-left: 400px;
+  position: fixed;
+}
+button {
+  position: relative;
+  margin-top: 30px;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 2;
+  overflow: hidden;
+  transition: 0.5s;
+}
+div button::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  height: 40px;
+  background: #e60707;
+  border-radius: 30px;
+  transition: 0.5s;
+  width: 0px;
+  z-index: -1;
+}
+div button:hover::before {
+  width: 100%;
+}
+div button:hover {
+  color: hsl(0, 14%, 99%);
+}
